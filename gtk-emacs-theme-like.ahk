@@ -237,28 +237,6 @@ is_target()
   Return
 
 ;
-; <ctrl>w
-; cut
-;
-^w::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    Send ^x
-  Return
-
-;
-; <ctrl>y
-; paste
-;
-^y::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    Send ^v
-  Return
-
-;
 ; <ctrl>k
 ; delete chars from cursor to end of line
 ;
